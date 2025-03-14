@@ -33,4 +33,8 @@ route.get('/project/:title', (req, res) => {
     })
     res.render('projectview', { project: curProject[0] })
 })
+
+route.get('/resume', (req, res) => {
+    res.render('resume')
+})
 module.exports = route
