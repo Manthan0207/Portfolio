@@ -66,12 +66,70 @@ project = [
         title: "MyAMTS",
         shortDescription: "A web application for Ahmedabad's public transport system.",
         description: "MyAMTS Web is a user-friendly platform designed to provide real-time information about Ahmedabad's AMTS bus services. It helps commuters plan their routes efficiently with an intuitive UI and seamless navigation. 🚌",
-        images: [],
+        images: [
+            {
+                "imageTitle": "Home Page",
+                "imageURL": "/images/amts_home.png",
+                "imageDesc": "The main dashboard displaying key features and navigation options."
+            },
+            {
+                "imageTitle": "Extended Home Page",
+                "imageURL": "/images/amts_recent.png",
+                "imageDesc": "Users can view recent searches, nearby bus stops, and find routes by bus number."
+            },
+            {
+                "imageTitle": "Search Bus Page",
+                "imageURL": "/images/amts_search.png",
+                "imageDesc": "Search for buses based on source and destination."
+            },
+            {
+                "imageTitle": "Available Buses",
+                "imageURL": "/images/amts_avail_buses.png",
+                "imageDesc": "Shows all available buses, including interchange options if needed."
+            },
+            {
+                "imageTitle": "Bus Route on Map",
+                "imageURL": "/images/amts_show_route_on_map.png",
+                "imageDesc": "Displays the selected bus route directly on the map."
+            },
+            {
+                "imageTitle": "Bus Arrival Status",
+                "imageURL": "/images/amts_delay.png",
+                "imageDesc": "Indicates whether a bus is on time or delayed."
+            },
+            {
+                "imageTitle": "Live Bus Tracking",
+                "imageURL": "/images/amts_live_tracking.png",
+                "imageDesc": "Provides real-time tracking of the bus location."
+            },
+            {
+                "imageTitle": "Ticket Booking & QR Code",
+                "imageURL": "/images/amts_qr.png",
+                "imageDesc": "Generates a QR code after booking, containing trip details."
+            },
+            {
+                "imageTitle": "Booking History",
+                "imageURL": "/images/amts_bookings.png",
+                "imageDesc": "Users can view their previous ticket bookings."
+            }
+
+        ],
         techStack: ["Django", "Python", "HTML", "CSS", "JavaScript", "Bootstrap"],
         textOfImages: [],
         links: {
             github: "https://github.com/Manthan0207/My-Amts"
-        }
+        },
+        functionality: [
+            "Real-Time Bus Tracking",
+            "Search & Filter Buses by Route",
+            "Live Estimated Arrival Time",
+            "Interactive Map for Bus Routes",
+            "QR-Based Ticket Booking System",
+            "View & Manage Past Bookings",
+            "Alerts for Delayed Buses",
+            "User-Friendly Interface with Responsive Design"
+        ],
+
     },
 
 
@@ -115,12 +173,35 @@ project = [
         title: "Real-Time Chat App",
         shortDescription: "A simple real-time chat application.",
         description: "Real-Time Chat App allows users to send and receive messages instantly using WebSockets. With a clean UI and responsive design, it provides a seamless chatting experience. 📩",
-        images: [],
+        images: [
+            {
+                "imageTitle": "User Name Input",
+                "imageURL": "/images/chatapp_entername.png",
+                "imageDesc": "Users are prompted to enter their name before joining the chat.",
+                "functionality": "Ensures unique user identification in the chat room."
+            },
+            {
+                "imageTitle": "Live Chat Demo",
+                "imageURL": "/images/chatapp_demo.png",
+                "imageDesc": "A real-time conversation between multiple users.",
+                "functionality": "Messages are broadcast instantly using WebSockets."
+            },
+        ],
         techStack: ["Node.js", "Socket.io", "HTML", "CSS", "JavaScript"],
         textOfImages: [],
         links: {
             github: "https://github.com/Manthan0207/Real-Time-Talk",
-        }
+        },
+        functionality: [
+            "Real-Time Message Broadcasting",
+            "Join & Leave Notifications",
+            "Instant Message Delivery",
+            "Audio Alerts for New Messages",
+            "Simple Name-Based Identification",
+            "Minimalistic & Responsive UI",
+            "Easy-to-Use Chat Interface",
+            "No Authentication Required"
+        ]
     }
 
 
