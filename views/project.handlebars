@@ -1,0 +1,29 @@
+<div class="container" style="margin-top: 5rem;">
+    {{#each project}}
+    <div class="card my-3 p-2" style="width: 100%;">
+        <div class="card-body">
+            <a class="card-title" href="/project/{{this.title}}" style="text-decoration: none;">
+                <h5>{{this.title}}</h5>
+            </a>
+            <h6 class="card-subtitle mb-2 text-muted">{{this.shortDescription}}</h6>
+            <p class="card-text">{{this.description}}</p>
+
+
+            <div class="mb-1">
+                <strong>Tech Stack:</strong>
+                {{#each this.techStack}}
+                <span class="badge bg-secondary">{{this}}</span>
+                {{/each}}
+            </div>
+
+
+            <a href="{{this.links.github}}" target="_blank" class="card-link text-dark fw-bold">
+                GitHub Repository
+            </a>
+            <a href="/project/{{this.title}}" class="card-link text-dark fw-bold">
+                Preview
+            </a>
+        </div>
+    </div>
+    {{/each}}
+</div>

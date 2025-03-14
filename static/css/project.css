@@ -1,0 +1,72 @@
+    .project-title {
+        color: #2d3748;
+        font-size: 2rem;
+    }
+
+    .tech-badge {
+        font-size: 0.85rem;
+        transition: transform 0.1s;
+    }
+
+    .github-btn {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .section-title {
+        letter-spacing: 0.5px;
+        border-bottom: 2px solid #e2e8f0;
+        padding-bottom: 0.5rem;
+    }
+
+    .feature-card {
+        transition: transform 0.2s;
+        font-size: 0.95rem;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-2px);
+    }
+
+    .description-text {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .image-card {
+        transition: transform 0.2s;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .image-card:hover {
+        transform: translateY(-2px);
+    }
+
+    .image-title {
+        font-size: 1rem;
+    }
+
+    .image-desc {
+        font-size: 0.875rem;
+    }
+
+    @media (max-width: 768px) {
+        .project-title {
+            font-size: 1.75rem;
+        }
+
+        .image-card img {
+            height: 300px !important;
+        }
+    }
+
+    .feature-pill {
+        transition: all 0.15s;
+        cursor: default;
+    }
+
+    .feature-pill:hover {
+        background-color: #f8f9fa !important;
+        transform: translateY(-1px);
+    }

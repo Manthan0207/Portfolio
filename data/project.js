@@ -1,0 +1,129 @@
+project = [
+    {
+        title: 'SnapNest',
+        shortDescription: 'A social media website.',
+        description: 'SnapNest is a visually captivating social media platform where users can share discover,and organize stunning images effortlessly. With a sleek design and intuitive features, it brings creativity and inspiration to your fingertips. 🚀',
+        images: [
+            {
+                imageTitle: 'Homepage Overview',
+                imageURL: '/images/snapnest_home.png',
+                imageDesc: 'A sleek and intuitive homepage that allows users to explore and discover inspiring content effortlessly.'
+            },
+            {
+                imageTitle: 'Real-Time Notifications',
+                imageURL: '/images/snapnest_notification.png',
+                imageDesc: 'Stay updated with real-time notifications for interactions, messages, and updates from your network.'
+            },
+            {
+                imageTitle: 'Personalized User Profile',
+                imageURL: '/images/snapnest_userprofile.png',
+                imageDesc: 'A well-structured user profile showcasing uploaded, saved, and liked posts for easy content management.'
+            },
+            {
+                imageTitle: 'Saved Collections',
+                imageURL: '/images/snapnest_user_saved.png',
+                imageDesc: 'Users can effortlessly save and organize content, creating personalized collections for future reference.'
+            },
+            {
+                imageTitle: 'Exploring Other Profiles',
+                imageURL: '/images/snapnest_otheruser_profile.png',
+                imageDesc: 'Get insights into other users’ profiles, exploring their uploaded content and creative inspirations.'
+            },
+            {
+                imageTitle: 'Seamless Content Upload',
+                imageURL: '/images/snapnest_upload.png',
+                imageDesc: 'An intuitive upload interface that allows users to share high-quality content with ease.'
+            },
+            {
+                imageTitle: 'Image Preview & Editing',
+                imageURL: '/images/snapnest_img_preview.png',
+                imageDesc: 'A dedicated preview page enabling users to review and fine-tune their uploads before publishing.'
+            }
+        ],
+        techStack: ['Django', 'HTML', 'CSS', 'JS', 'Bootstrap5'],
+
+        links: {
+            github: 'https://github.com/Manthan0207/pin-11',
+        },
+
+        functionality: [
+            "User Authentication",
+            "Image Upload & Management",
+            "Like, Save & Comment",
+            "Real-Time Notifications",
+            "Profile Customization",
+            "Follow & Explore Users",
+            "Responsive Design",
+            "Search & Discovery",
+        ],
+
+    },
+
+
+
+
+    {
+        title: "MyAMTS",
+        shortDescription: "A web application for Ahmedabad's public transport system.",
+        description: "MyAMTS Web is a user-friendly platform designed to provide real-time information about Ahmedabad's AMTS bus services. It helps commuters plan their routes efficiently with an intuitive UI and seamless navigation. 🚌",
+        images: [],
+        techStack: ["Django", "Python", "HTML", "CSS", "JavaScript", "Bootstrap"],
+        textOfImages: [],
+        links: {
+            github: "https://github.com/Manthan0207/My-Amts"
+        }
+    },
+
+
+
+
+
+    {
+        title: "QuizQuest",
+        shortDescription: "An interactive quiz game.",
+        description: "QuizQuest is a fun and engaging quiz game designed to test knowledge across various topics. With an intuitive UI, real-time score tracking, and a smooth user experience, it makes learning enjoyable and competitive. 🎯",
+        images: [],
+        techStack: ['Java', 'Java Swing', 'Supabase'],
+        textOfImages: [],
+        links: {
+            github: "https://github.com/Manthan0207/QuizQuest-using-Java-Swing",
+        }
+    },
+
+
+
+
+
+    {
+        title: "Klondike Solitaire",
+        shortDescription: "A classic Klondike Solitaire game.",
+        description: "Klondike Solitaire is a digital version of the timeless card game. Built with smooth animations and an intuitive interface, it provides an enjoyable solitaire experience for all players. 🃏",
+        images: [],
+        techStack: ["Java", "Java Swing", "Supabase"],
+        textOfImages: [],
+        links: {
+            github: "https://github.com/Manthan0207/Klondike-Solitaire",
+        }
+    },
+
+
+
+
+
+
+    {
+        title: "Real-Time Chat App",
+        shortDescription: "A simple real-time chat application.",
+        description: "Real-Time Chat App allows users to send and receive messages instantly using WebSockets. With a clean UI and responsive design, it provides a seamless chatting experience. 📩",
+        images: [],
+        techStack: ["Node.js", "Socket.io", "HTML", "CSS", "JavaScript"],
+        textOfImages: [],
+        links: {
+            github: "https://github.com/Manthan0207/Real-Time-Talk",
+        }
+    }
+
+
+]
+
+module.exports = project
