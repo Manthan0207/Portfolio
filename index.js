@@ -15,6 +15,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 //middleware to use static files.
 app.use(express.static(path.join(__dirname, 'static')))
+//middleware for routes
 app.use('/', require(path.join(__dirname, 'routes/server.js')))
 
 
@@ -22,5 +23,4 @@ app.use('/', require(path.join(__dirname, 'routes/server.js')))
 
 app.listen(port, () => {
     console.log('Server Listening on ', port);
-
 })

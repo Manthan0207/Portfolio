@@ -140,12 +140,33 @@ project = [
         title: "QuizQuest",
         shortDescription: "An interactive quiz game.",
         description: "QuizQuest is a fun and engaging quiz game designed to test knowledge across various topics. With an intuitive UI, real-time score tracking, and a smooth user experience, it makes learning enjoyable and competitive. 🎯",
-        images: [],
+        images: [
+            {
+                "imageTitle": "User Authentication Page",
+                "imageURL": "/images/quiz_home (1).png",
+                "imageDesc": "Login or register to access the quiz platform securely."
+            },
+            {
+                "imageTitle": "Home Page",
+                "imageURL": "/images/quiz_homw2.png",
+                "imageDesc": "The main dashboard featuring three different quiz categories."
+            },
+            {
+                "imageTitle": "Quiz Page",
+                "imageURL": "/images/quiz_quiz.png",
+                "imageDesc": "Displays questions and answer options. (Note: Due to an expired Supabase database, questions and answers are not currently visible.)"
+            },
+        ],
         techStack: ['Java', 'Java Swing', 'Supabase'],
-        textOfImages: [],
         links: {
             github: "https://github.com/Manthan0207/QuizQuest-using-Java-Swing",
-        }
+        },
+        functionality: [
+            "User Authentication & Login System",
+            "Multiple Quiz Categories",
+            "Instant Feedback on Correct & Incorrect Answers",
+            "User-Friendly Quiz Interface",
+        ],
     },
 
 
@@ -156,12 +177,30 @@ project = [
         title: "Klondike Solitaire",
         shortDescription: "A classic Klondike Solitaire game.",
         description: "Klondike Solitaire is a digital version of the timeless card game. Built with smooth animations and an intuitive interface, it provides an enjoyable solitaire experience for all players. 🃏",
-        images: [],
+        images: [
+            {
+                "imageTitle": "User Authentication",
+                "imageURL": "/images/card_1.png",
+                "imageDesc": "Secure login system for players to access the game."
+            },
+            {
+                "imageTitle": "Game Panel",
+                "imageURL": "/images/card_2.png",
+                "imageDesc": "Play the game, track score and moves, view leaderboards, statistics, and utilize undo/reset options."
+            }
+        ],
         techStack: ["Java", "Java Swing", "Supabase"],
-        textOfImages: [],
+
         links: {
-            github: "https://github.com/Manthan0207/Klondike-Solitaire",
-        }
+            github: "https://github.com/Satyam-Maru/Klondike-Solitaire",
+        },
+        functionality: [
+            "User Authentication & Secure Login",
+            "Interactive Gameplay with Score Tracking",
+            "Move History & Undo/Reset Functionality",
+            "Real-Time Leaderboard",
+            "Detailed Game Statistics",
+        ],
     },
 
 
