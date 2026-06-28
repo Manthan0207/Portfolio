@@ -1,5 +1,154 @@
 project = [
     {
+        title: "VestureAI",
+        shortDescription: "An AI-powered virtual try-on and personalized fashion e-commerce platform.",
+        description: "Vesture AI is a full-stack e-commerce platform that tackles the two biggest problems in online clothes shopping: uncertainty about fit/appearance and the paradox of too much choice. It lets buyers upload a photo to virtually try on clothing before purchasing, and pairs that with a personal-stylist recommendation engine that factors in skintone, body type, age, and style preference. Sellers get a dedicated dashboard with inventory management and sales analytics. 👗",
+        techStack: ["React", "Node.js", "Express.js", "MongoDB", "Python", "FastAPI", "Tailwind CSS", "Zustand"],
+        links: {
+            github: "https://github.com/Manthan0207/VestureAI",
+        },
+        functionality: [
+            "AI Virtual Try-On from a User Photo",
+            "Personalized Stylist Recommendation Engine",
+            "Dual-Backend Architecture (Node.js Commerce + FastAPI AI Service)",
+            "Full Authentication with Email Verification",
+            "Guided AI-Powered Onboarding for Style Profile",
+            "Cart, Checkout, Order Tracking & Reviews",
+            "Wishlist",
+            "Seller Dashboard with Inventory & Sales Analytics",
+        ],
+    },
+
+
+
+
+    {
+        title: "Expense Tracker MCP Server",
+        shortDescription: "An MCP server that lets AI assistants manage your expenses and balance.",
+        description: "A Model Context Protocol (MCP) server built with FastMCP that turns expense tracking into a set of tools any MCP-compatible AI assistant can call directly. It maintains a running balance, lets the assistant log and categorize expenses, summarize spending by category and date range, and add or withdraw money, all backed by SQLite with async access. 💰",
+        techStack: ["Python", "FastMCP", "SQLite", "aiosqlite"],
+        links: {
+            github: "https://github.com/Manthan0207/expense-tracker-mcp-server",
+        },
+        functionality: [
+            "Add, List & Delete Expenses",
+            "Automatic Balance Deduction & Refund on Delete",
+            "Spending Summaries by Category & Date Range",
+            "Add Money / Withdraw Money from Balance",
+            "Category Resource Exposed via MCP",
+            "Async SQLite Persistence",
+        ],
+    },
+
+
+
+
+    {
+        title: "Video Insight AI",
+        shortDescription: "A full-stack RAG chatbot that lets you chat with any YouTube video.",
+        description: "Video Insight AI is a full-stack RAG chatbot for YouTube content. Paste a video link, and the backend fetches its transcript, chunks and embeds it into Pinecone, then lets you ask questions that are answered strictly from the video's own content. Conversation memory is handled by LangGraph with a SQLite checkpointer, and conversations are automatically summarized after 20 messages to manage context length. 🎬",
+        techStack: ["FastAPI", "LangGraph", "LangChain", "Pinecone", "Next.js", "TypeScript", "Tailwind CSS", "SQLite"],
+        links: {
+            github: "https://github.com/Manthan0207/yt-rag-chatbot",
+        },
+        functionality: [
+            "YouTube Transcript Ingestion with Background Processing",
+            "RAG-Based Chat Grounded in Video Transcript",
+            "JWT Authentication with Cookie-Based Sessions",
+            "Auth Guard via Next.js Middleware",
+            "Conversation Summarization to Manage Context Window",
+            "Persistent Thread History Across Sessions",
+            "Video Processing Status Polling",
+        ],
+    },
+
+
+
+
+    {
+        title: "Blog Writing Agent",
+        shortDescription: "A LangGraph agent that researches and writes technical blog posts with images.",
+        description: "An autonomous blog-writing agent built with LangGraph. Given a topic, it decides whether to rely on its own knowledge, research the web, or use a hybrid of both, then builds a structured outline, writes each section in parallel using LangGraph workers, merges everything into clean markdown, and generates accompanying images with Gemini before saving the final post. ✍️",
+        techStack: ["Python", "LangGraph", "LangChain", "OpenAI", "Tavily", "Gemini"],
+        links: {
+            github: "https://github.com/Manthan0207/blog-writing-agent",
+        },
+        functionality: [
+            "Topic Routing: Closed-Book / Hybrid / Open-Book",
+            "Web Research via Tavily When Needed",
+            "Structured Blog Plan Generation",
+            "Parallel Section Writing with LangGraph Workers",
+            "Automatic Markdown Merge with Image Placeholders",
+            "AI-Generated Images via Gemini",
+            "Graceful Fallback if Image Generation Fails",
+        ],
+    },
+
+
+
+
+    {
+        title: "RAGBase",
+        shortDescription: "A reusable, production-style scaffold for building RAG chatbots.",
+        description: "RAGBase is a clonable starting point for building real RAG chatbots without starting from scratch. It comes with a working chat UI with streaming responses, persistent per-user thread history, long-term memory in SQLite, and a FAISS-backed knowledge base — all wired together so you only need to swap in your own documents and prompts to turn it into a fully custom assistant. 📚",
+        techStack: ["FastAPI", "LangGraph", "FAISS", "SQLite", "Next.js"],
+        links: {
+            github: "https://github.com/Manthan0207/RAGBase",
+        },
+        functionality: [
+            "Streaming Chat UI via Server-Sent Events",
+            "Per-Thread Chat History Persisted in SQLite",
+            "Thread Reload on Refresh Using Thread ID",
+            "Long-Term Memory Storage",
+            "FAISS-Backed Knowledge Base Retrieval",
+            "Modular Design for Swapping in Custom Documents & Prompts",
+        ],
+    },
+
+
+
+
+    {
+        title: "MarketPulse Stock Picker",
+        shortDescription: "A multi-agent CrewAI system that researches stocks and picks the best one.",
+        description: "MarketPulse Stock Picker is a CrewAI-based multi-agent system that automates a slice of investment research. It finds trending companies in a target sector, runs financial research on each candidate, picks the single best investment opportunity with a written rationale, and pushes the final decision straight to your phone as a notification. 📈",
+        techStack: ["Python", "CrewAI", "Pushover API"],
+        links: {
+            github: "https://github.com/Manthan0207/marketpulse-stock-picker",
+        },
+        functionality: [
+            "Trending Company Discovery in a Target Sector",
+            "Automated Financial Research per Candidate",
+            "Best-Candidate Selection with Written Reasoning",
+            "Push Notification Delivery via Pushover",
+            "Structured JSON & Markdown Output Files",
+        ],
+    },
+
+
+
+
+    {
+        title: "Deep Research Agent",
+        shortDescription: "An async multi-agent assistant that turns a query into a full research report.",
+        description: "Deep Research Agent is an asynchronous multi-agent research assistant. From a single user query, it plans a set of web searches, runs them in parallel, synthesizes the findings into a detailed long-form markdown report, and can optionally email that report as HTML — all through a simple Gradio interface. 🔍",
+        techStack: ["Python", "OpenAI Agents SDK", "Gradio", "SendGrid"],
+        links: {
+            github: "https://github.com/Manthan0207/deep-research-agent",
+        },
+        functionality: [
+            "Query-Driven Search Plan Generation",
+            "Parallel Web Search Execution",
+            "Long-Form Markdown Report Writing",
+            "Optional HTML Email Delivery via SendGrid",
+            "Simple Gradio UI Front End",
+        ],
+    },
+
+
+
+
+    {
         title: 'SnapNest',
         shortDescription: 'A social media website.',
         description: 'SnapNest is a visually captivating social media platform where users can share discover,and organize stunning images effortlessly. With a sleek design and intuitive features, it brings creativity and inspiration to your fingertips. 🚀',
